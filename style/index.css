@@ -1,0 +1,735 @@
+*
+{
+    box-sizing:border-box;
+}
+body
+{
+    margin:0px;
+    background-color:rgb(245,245,245);
+}
+html
+{
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+:root
+{
+    --main-color:rgb(0,120,255)
+}
+/******************************************** start of nav **********************************************************/
+.navbar .navbar-brand
+{
+    color: var(--main-color);
+    font-size: 25.6px;
+    font-weight: 600;
+    background-color: transparent;
+}
+.navbar ul li a
+{
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+    color:var(--main-color)
+}
+.navbar ul li a::after
+{
+    content:'';
+    position: absolute;
+    width: 0px;
+    height: 2.5px;
+    background-color:var(--main-color);
+    bottom: 0px;
+    left: 9.5px;
+    transition: width 1s ;
+}
+.navbar ul li:hover a::after
+{
+    width: 40px;
+}
+.navbar-nav
+{
+    width: 60%;
+}
+/******************************************** end of nav **************************************************************/
+
+/******************************************** start of home **********************************************************/
+.home
+{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/home/hero-bg.jpg);
+    background-position:center center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+.home-caption h1
+{
+    color: rgb(255, 255, 255);
+    font-size: 65px;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+.home-caption h2::after
+{
+    content: '';
+    color: rgb(255, 255, 255);
+    font-size:40px;
+    margin-top: 10px;
+    animation: move1 30s  infinite ;
+}
+@keyframes move1 {
+/* CEO DevFol */
+0%{content:'|'}
+0.8%{content: 'C|';}
+1.6%{content: 'CE|';}
+2.4%{content: 'CEO|';}
+3.2%{content: 'CEO |';}
+4%{content: 'CEO D|';}
+4.8%{content: 'CEO De|';}
+5.6%{content: 'CEO Dev|';}
+6.4%{content: 'CEO DevF|';}
+7.2%{content: 'CEO DevFo|';}
+8%{content: 'CEO DevFol|';}
+8.8%{content: 'CEO DevFoli|';}
+9.6%{content: 'CEO DevFolio|';}
+10.4%{content: 'CEO DevFoli|';}
+11.2%{content: 'CEO DevFol|';}
+12%{content: 'CEO DevFo|';}
+12.8%{content: 'CEO DevF|';}
+13.6%{content: 'CEO Dev|';} 
+14.4%{content: 'CEO De|';}
+15.2%{content: 'CEO D|';}
+16%{content: 'CEO |';}
+16.8%{content: 'CEO|';}
+17.6%{content: 'CE|';}
+18.4%{content: 'C|';}
+19.2%{content: '|';}
+20%{content: 'W|';}
+20.8%{content: 'We|';}
+21.6%{content: 'Web|';}
+22.4%{content: 'Web |';}
+23.2%{content:'Web D|';}
+24%{content:'Web De|';}
+24.8%{content:'Web Dev|';}
+25.6%{content: 'Web Deve|';} 
+26.4%{content: 'Web Devel|';}
+27.2%{content: 'Web Develo|';}
+28%{content: 'Web Develop|';}
+28.8%{content: 'Web Develope|';}
+29.6%{content: 'Web Developer|';}
+30.4%{content: 'Web Develope|';}
+31.2%{content: 'Web Develop|';}
+32%{content: 'Web Develo|';}
+32.8%{content: 'Web Devel|';}
+33.6%{content: 'Web Deve|';}
+34.4%{content: 'Web Dev|';}
+35.2%{content: 'Web De|';}
+36%{content: 'Web Des|';}
+36.8%{content: 'Web Desi|';}
+37.6%{content: 'Web Desig|';}
+38.4%{content: 'Web Design|';}
+39.2%{content: 'Web Designe|';} 
+40%{content: 'Web Designer|';}
+40.8%{content: 'Web Designe|';}
+41.6%{content: 'Web Design|';}
+42.4%{content: 'Web Desig|';}
+43.2%{content: 'Web Desi|';}
+ 44%{content: 'Web Des|';}
+44.8%{content: 'Web De|';}
+45.6%{content: 'Web D|';}
+46.4%{content: 'Web |';}
+47.2%{content: 'Web|';}
+48%{content: 'We|';}   
+48.8%{content: 'W|';}  
+49.6%{content: '|';} 
+50.4%{content: 'G';} 
+51.2%{content: 'Gr|';} 
+52%{content: 'Gra|';}
+52.8%{content: 'Grap|';}
+ 53.6%{content: 'Graph|';}
+54.4%{content: 'Graphi|';}
+55.2%{content: 'Graphic |';}
+56%{content: 'Graphic D|';}
+56.8%{content: 'Graphic De|';}
+57.6%{content: 'Graphic Des|';}
+58.4%{content: 'Graphic Desi|';}
+ 59.2%{content: 'Graphic Desig|';}
+60%{content: 'Graphic Design|';}
+60.8%{content: 'Graphic Designe|';}
+61.6%{content: 'Graphic Designer|';}
+62.4%{content: 'Graphic Designe|';}
+63.2%{content: 'Graphic Design|';}
+64%{content: 'Graphic Desig|';}
+64.8%{content: 'Graphic Desi|';}
+65.6%{content: 'Graphic Des|';} 
+66.4%{content: 'Graphic De|';} 
+67.2%{content: 'Graphic D|';}
+68%{content: 'Graphic |';} 
+68.8%{content: 'Graphic|';}
+69.6%{content: 'Graphic|';}
+70.4%{content: 'Graphi|';}  
+71.2%{content: 'Graph|';}
+72%{content: 'Grap|';}
+72.8%{content: 'Gra|';}
+73.5%{content: 'Gr|';}
+74.4%{content: 'G|';}
+75.2%{content: '|';}
+76%{content: 'F|';}
+76.8%{content: 'Fr|';}
+77.6%{content: 'Fro|';}
+78.4%{content: 'Fron|';}
+79.2%{content: 'Front|';}
+80%{content: 'Fronte|';}
+80.8%{content: 'Fronten|';}
+81.6%{content: 'Frontend|';}
+82.4%{content: 'Frontend |';} 
+83.2%{content: 'Frontend D|';}
+84%{content: 'Frontend De|';}
+84.8%{content: 'Frontend Dev|';}
+85.6%{content: 'Frontend Deve|';}    
+86%{content: 'Frontend Devel|';}
+86.8%{content: 'Frontend Develo|';}
+87.2%{content: 'Frontend Develop|';}
+88%{content: 'Frontend Develope|';}
+88.8%{content: 'Frontend Developer|';}
+89.6%{content: 'Frontend Develope|';}
+90.4%{content: 'Frontend Develop|';}
+91.2%{content: 'Frontend Develo|';}
+92%{content: 'Frontend Devel|';}
+93.6%{content: 'Frontend Dev|';}
+94.4%{content: 'Frontend De';}
+95.2%{content: 'Frontend D|';}
+96%{content: 'Frontend ';}
+96.8%{content: 'Frontend|';}
+97.6%{content: 'Fronte|';}
+98.4%{content: 'Fro|';}
+99.2%{content: 'F|';}
+100%{content: '|';}         
+}
+.arrow-up
+{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: gray;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    transition: all 0.5s;
+    z-index: 5555;
+}
+.arrow-up i
+{
+    font-size:15px;
+}
+.arrow-up:hover
+{
+ background-color:var(--main-color)
+}
+/******************************************** end of home *************************************************************/
+
+/******************************************** start of about **********************************************************/
+.container-services,.container-about,.info-container,.PORTFOLIO-container,.blog-container,.contact-container
+{
+    width:78.5%;
+    margin:auto;
+}
+.about-left p span
+{
+    font-weight: bold;
+    color:black;
+    margin-right:3px;
+}
+.about-left p
+{
+    color: rgb(78, 78, 78);
+    font-size: 16px;
+}
+.about-left
+{
+    color: rgb(30, 30, 30);
+    font-size: 17.6px;
+    font-weight: 600;
+    margin-bottom: 16px
+}
+.progress
+{
+    overflow: hidden;
+    margin-bottom: 8px;
+    margin-top: -5px;
+}
+.progress .progress-bar
+{
+    position: relative;
+    left: -15px;
+    border-top-left-radius:5px ;
+    border-bottom-left-radius:5px ;
+}
+.about-right
+{
+    margin-left: 15px;
+}
+.about-right h3
+{
+    position: relative;
+    color: rgb(30, 30, 30);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 8px
+}
+.about-right h3::after
+{
+    content:'';
+    position:absolute;
+    width:100px;
+    height:3.5px;
+    background-color:var(--main-color);
+    bottom: -10px;
+    left: 0;
+
+}
+.about-right p
+{
+    color: rgb(78, 78, 78);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 25px
+}
+/******************************************** end of about ************************************************************/
+
+/******************************************** start of Services *********************************************************/
+.services h3,.PORTFOLIO h3,.blog h3
+{
+    color: rgb(30, 30, 30);
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    position: relative;
+}
+.services h3::after,.PORTFOLIO h3::after,.blog h3::after
+{
+    content:'';
+    position:absolute;
+    width: 50px;
+    height: 4px;
+    background-color:var(--main-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -85%;
+}
+.services-icon
+{
+    width: 110px;
+    height: 110px;
+    border: 11.5px solid var(--main-color);
+    font-size:45px;
+    transition: all 0.8s;
+}
+.services-item:hover .services-icon
+{
+    background-color:var(--main-color);
+    color: white;
+    border-color:rgb(205,225,248);
+    
+}
+.services-item
+{
+    color: rgb(78, 78, 78);
+    line-height: 1.4;
+    margin-right: 35px;
+    padding: 40px 15px;
+    margin-bottom:50px;
+}
+.services-item h2
+{
+    color: rgb(30, 30, 30);
+    font-size: 22.4px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    padding-bottom: 6.4px
+}
+/******************************************** end of Services *********************************************************/
+
+/******************************************** start of info *********************************************************/
+.info
+{
+    background:linear-gradient(rgb(0, 120, 255,.68),rgb(0, 120, 255,.68)),url(../images/info/num.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0px;
+    width: 100%;
+}
+.info-icon
+{
+    width:75px;
+    height:75px;
+    border:9px rgb(205,225,248) solid;
+    font-size:27px;
+    color:white;
+    margin-bottom: 10px;
+}
+.info h4
+{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+.info p
+{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+/* 1 */
+.info .item-1 h4::after
+{
+    content: "450";
+    animation: to-450 5s ;
+}
+@keyframes to-450 {
+    0%{content: "0";}
+    10%{content: "20";}
+    20%{content: "50";}
+    30%{content: "90";}
+    40%{content: "130";}
+    50%{content: "180";}
+    60%{content: "220";}
+    70%{content: "290";}
+    80%{content: "385";}
+    90%{content: "400";}
+    100%{content: "450";}
+}
+/* 2 */
+.info .item-2 h4::after
+{
+    content: "15";
+    animation: to-15 5s ;
+}
+@keyframes to-15 {
+    0%{content: "0";}
+    10%{content: "2";}
+    20%{content: "4";}
+    30%{content: "6";}
+    40%{content: "8";}
+    50%{content: "9";}
+    60%{content: "10";}
+    70%{content: "11";}
+    80%{content: "12";}
+    90%{content: "13";}
+    100%{content: "15";}
+}
+/* 3 */
+.info .item-3 h4::after
+{
+    content: "550";
+    animation: to-550 5s ;
+}
+@keyframes to-550 {
+    0%{content: "0";}
+    10%{content: "50";}
+    20%{content: "100";}
+    30%{content: "150";}
+    40%{content: "200";}
+    50%{content: "250";}
+    60%{content: "300";}
+    70%{content: "350";}
+    80%{content: "450";}
+    90%{content: "500";}
+    100%{content: "550";}
+}
+/* 4 */
+.info .item-4 h4::after
+{
+    content: "36";
+    animation: to-36 5s ;
+}
+@keyframes to-36 {
+    0%{content: "0";}
+    10%{content: "5";}
+    20%{content: "10";}
+    30%{content: "15";}
+    40%{content: "20";}
+    50%{content: "25";}
+    60%{content: "30";}
+    70%{content: "31";}
+    80%{content: "32";}
+    90%{content: "35";}
+    100%{content: "36";}
+}
+/******************************************** end of info ***********************************************************/
+
+/******************************************** start of PORTFOLIO ****************************************************/
+.PORTFOLIO h3,.PORTFOLIO p,.blog h3,.blog p
+{
+    text-align:center
+}
+.PORTFOLIO-caption h2
+{
+    color: rgb(30, 30, 30);
+    font-size: 19.2px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top:30px;
+}
+.PORTFOLIO-footer p span
+{
+    color: rgb(0, 120, 255);
+    font-size: 12.8px;
+    font-weight: 400;
+}
+.PORTFOLIO-footer p 
+{
+    color: rgb(78, 78, 78);
+    font-size: 12.8px;
+    font-weight: 400;
+}
+.PORTFOLIO-footer i
+{
+ margin-top:-25px;
+ font-size:40px;
+ color:var(--main-color);
+}
+.PORTFOLIO-item
+{
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.PORTFOLIO-item img
+{
+    transition: transform 1.5s;
+}
+.portfolio-img
+{
+    overflow: hidden;
+}
+.PORTFOLIO-item:hover img
+{
+ transform: scale(1.4);
+}
+.modal-dialog
+{
+    position: relative;
+}
+.modal-content
+{
+    width: 800px;
+    margin-left: -150px;
+}
+.modal-content img
+{
+    transform: scale(1.3);
+    width: 100%;
+    border-radius: 50px;
+}
+.modal-dialog p
+{
+    margin-top: 80px;
+    position: static;
+}
+/******************************************** end of PORTFOLIO ******************************************************/
+
+/******************************************** start of slider *********************************************************/
+.slider
+{
+    background:linear-gradient(rgb(0, 120, 255,.68),rgb(0, 120, 255,.68)),url(../images/slider/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 88vh;
+}
+.carousel-caption h5
+{
+    color: rgb(255, 255, 255);
+    font-size: 22.4px;
+    font-weight: 600;
+    line-height: 33.6px;
+    margin-bottom: 16px
+}
+.carousel-caption p
+{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 16px
+}
+.circle
+{
+    width: 50px;
+    height: 50px;
+
+}
+.circle i
+{
+    color: rgb(0,120,255);
+}
+/******************************************** end of slider ***********************************************************/
+
+/******************************************** end of blog ***********************************************************/
+.blog-footer p img
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+    border-radius: 10px;
+}
+.blog-footer
+{
+    background-color: rgb(247,247,247);
+    border-top: rgb(216,216,216) 2px solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.blog-footer p:nth-child(1)
+{
+    color: rgb(30, 30, 30);
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.blog-footer p:nth-child(1):hover
+{
+    color: rgb(0,120,254);
+}
+.blog-footer p:nth-child(2)
+{
+    color: rgb(78, 78, 78);
+}
+.blog-item p:nth-child(3)
+{
+    color: rgb(78, 78, 78);
+    margin-bottom: 16px
+}
+.blog-item h2
+{
+    color: rgb(30, 30, 30);
+    font-size: 20.8px;
+    font-weight: 500;
+    transition: all 0.7s;
+}
+.blog-item
+{
+    border: 2px rgb(216,216,216) solid;
+    border-radius: 10px;
+}
+.blog .caption
+{
+    background-color: rgb(0, 120, 255);
+    width: 93px;
+    height: 27px;
+    border-radius: 4px;
+    transform: translateY(-50%);
+}
+.blog .caption h6
+{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-top: 7px;
+}
+.blog-item h2:hover
+{
+    color:rgb(0, 120, 255);
+    cursor: pointer;
+}
+/******************************************** end of blog **************************************************************/
+
+/******************************************** start of Contact *********************************************************/
+.contact-left h3,.contact-right h3
+{
+    position: relative;
+    color: rgb(30, 30, 30);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 8px
+}
+.contact-left h3::after,.contact-right h3::after
+{
+    content:'';
+    position:absolute;
+    width:100px;
+    height:3.5px;
+    background-color:var(--main-color);
+    bottom: -10px;
+    left: 0;
+}
+.contact
+{
+    background:linear-gradient(rgb(0, 120, 255,.68),rgb(0, 120, 255,.68)),url(../images/slider/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.contact .btn-1
+{
+     padding: 13px 35px ;
+    background-color: rgb(0, 120, 255,1);
+    color: white;
+    background-color: rgb(0, 120, 255);
+    border-bottom-color: rgb(205, 225, 248);
+    margin-top: 20px;
+    border: 2px rgb(216,216,216) solid;
+    font-size: 18px;
+    transition: background-color 0.5s;
+}
+.contact .btn-1:hover
+{
+    background-color:rgb(0,103,221);
+    border: 3.5px solid rgb(205,225,248);
+}
+.contact-right p:nth-child(2)
+{
+    color: rgb(78, 78, 78);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+.contact p i
+{
+    color: rgb(0,120,255);
+    margin-right: 5px;
+}
+.contact-right .icon-circle
+{
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgb(0,120,255);
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+.contact-right .icon-circle:hover
+{
+    background-color:rgb(0,120,255);
+    border-color:rgb(205,225,248);
+    color: white;
+
+}
+.contact-left textarea
+{
+  height: 180px !important;
+}
+footer
+{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-top: 50px;
+}
+footer span
+{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700
+}
+footer p
+{
+ margin: 0;
+}
+/******************************************** end of Contact ***********************************************************/

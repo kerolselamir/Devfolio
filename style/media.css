@@ -1,0 +1,433 @@
+/******************************************************** xxl *******************************************************/
+@media screen and (min-width:1400px){
+    
+}
+
+/******************************************************** xl *******************************************************/
+@media screen and (max-width:1400px) and (min-width:1200px) {
+    
+}
+
+/******************************************************** lg *******************************************************/
+@media screen and (max-width:1200px) and (min-width:992px) {
+    
+     /* start of about */
+     .container-about
+     {
+         width:95%;
+         margin:auto;
+         padding:0
+     }
+     .about-left
+     {
+         padding-top:13px
+     }
+     .about-left  .img-caption p    
+     {
+         font-size:15px;
+         margin-left: 30px;
+     }
+     .about-left img
+     {
+         width:100%
+     }
+     
+     /* start of about */
+
+    /* start of services */
+    .container-services
+    {
+        width:100%;
+        margin:auto;
+    }
+    .container-services .item-1,.container-services .item-3,.container-services .item-5
+    {
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .container-services .item-2, .container-services .item-4, .container-services .item-6
+    {
+        margin-left:20px;
+        margin-right:20px;
+    } 
+    /* end of services*/
+    
+    /* start of PORTFOLIO */
+    .PORTFOLIO-container
+    {
+        width:95%;
+        margin:auto;
+    }
+    .modal-content
+    {
+        width: 700px;
+        margin: auto;
+        /* margin-left: -150px; */
+        transform: translate(-15%);
+    }
+    .modal-content img
+    {
+        transform: scale(1.3);
+        width: 100%;
+        border-radius: 50px;
+    }
+    .modal-dialog p
+    {
+        margin-top: 65px;
+        position: static;
+    }
+    /* end of PORTFOLIO */
+
+    /* start of blog  */
+    .blog-container
+    {
+        width:95%;
+        margin:auto;  
+    }
+    /* end of blog  */
+    
+}
+
+/******************************************************** md *******************************************************/
+@media screen and (max-width:992px) and (min-width:768px) {
+    /* start of nav */
+    .navbar ul li a::after
+     {
+       content:'';
+       position: absolute;
+       bottom: 0px;
+       left: 0px;
+   
+    }
+    /* end of nav */
+
+    /* start of home */
+    .home-caption h1
+    {
+       font-size: 65px;
+       text-align: center; 
+    }
+    .home-caption h2::after
+    {
+        font-size:40px;
+    }
+    /* end of home */
+
+     /* start of about */
+    .container-about
+    {
+        width:95%;
+        margin:auto;
+        padding:0
+    }
+    .about-left
+    {
+        padding-top:13px
+    }
+    .about-left  .img-caption p    
+    {
+        font-size:15px;
+        margin-left: 30px;
+    }
+    .about-left img
+    {
+        width:100%
+    }
+    
+    /* start of about */
+
+    /* start of services */
+    .container-services
+    {
+        width:100%;
+        margin:auto;
+    }
+    .container-services .item-1,.container-services .item-3,.container-services .item-5
+    {
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .container-services .item-2, .container-services .item-4, .container-services .item-6
+    {
+        margin-left:20px;
+        margin-right:20px;
+    } 
+    /* end of services*/
+
+     /* start of PORTFOLIO */
+    .PORTFOLIO-container
+    {
+        width:94%;
+        margin:auto;
+    }
+    .modal-content
+    {
+        width: 650px;
+        margin: auto;
+        /* margin-left: -150px; */
+        transform: translate(-12%);
+    }
+    .modal-content img
+    {
+        transform: scale(1.3);
+        width: 100%;
+        border-radius: 50px;
+    }
+    .modal-dialog p
+    {
+        margin-top: 65px;
+        position: static;
+    }
+    /* end of PORTFOLIO */
+
+    /* start of blog  */
+    .blog-container
+    {
+        width:94%;
+        margin:auto;  
+    }
+    /* end of blog  */
+
+    /* start of contact */
+    .contact-container
+    {
+        width:94%;
+        margin:auto;
+        padding-bottom: 50px !important;
+    }
+    .contact-right p
+    {
+       font-size: 14px;
+    }
+    /* end of contact */
+}
+
+/******************************************************** sm *******************************************************/
+@media screen and (max-width:768px) and (min-width:576px) {
+    /* start of nav */
+    .navbar ul li a::after
+    {
+       content:'';
+       position: absolute;
+       bottom: 0px;
+       left: 0px;
+   
+    }
+    /* end of nav */
+
+    /* start of home */
+    .home-caption h1
+    {
+       font-size: 50px;
+       text-align: center; 
+    }
+    .home-caption h2::after
+    {
+        font-size:30px;
+    }
+    /* end of home */
+        
+    /* start of about */
+    .container-about
+    {
+        width:86%;
+        margin:auto;
+        padding:0
+    }
+    .about-left p    
+    {
+        font-size:15px;
+    }
+    .about-left img
+    {
+        width: 100%;
+    }
+    .img-caption
+    {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* start of about */
+
+    /* start of services */
+    .container-services
+    {
+        width:86%;
+        margin:auto;
+    }
+    .services-item
+    {
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    /* end of services */
+
+    /* start of PORTFOLIO */
+    .PORTFOLIO-container
+    {
+        width:87%;
+        margin:auto;
+    }
+    .modal-content
+    {
+        width: 550px;
+        margin: auto;
+        /* margin-left: -150px; */
+        transform: translate(-5%);
+    }
+    .modal-content img
+    {
+        transform: scale(1.3);
+        width: 100%;
+        border-radius: 50px;
+    }
+    .modal-dialog p
+    {
+        margin-top: 55px;
+        position: static;
+    }
+    /* end of PORTFOLIO */
+
+    /* start of slider */
+    .carousel-caption
+    {
+        width: 80% !important;
+    }
+    /* end of slider */
+
+    /* start of blog  */
+    .blog-container
+    {
+        width:87%;
+        margin:auto;  
+    }
+    /* end of blog  */
+
+    /* start of contact */
+    .contact-container
+    {
+        width:87%;
+        margin:auto;
+        padding-bottom: 50px !important;
+    }
+    .contact-icons
+    {
+        margin-top: 30px;
+    }
+    /* end of contact */
+}
+
+/********************************************************extra sm **************************************************/
+@media screen and (max-width:576px) {
+    
+    /* start of nav */
+    .navbar-collapse ul 
+    {
+       color:red !important;
+       float:left;
+       transform: translateX(45px);
+       
+    }
+    .navbar ul li a::after
+    {
+    content:'';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    }
+    /* end of nav */
+
+    /* start of home */
+    .home-caption h1
+    {
+       font-size: 45px;
+       text-align: center; 
+    }
+    .home-caption h2::after
+    {
+        font-size:30px;
+    }
+    /* end of home */
+
+    /* start of about */
+    .container-about
+    {
+        width:90%;
+        margin:auto;
+        padding:0
+    }
+    .about-right
+    {
+        padding: 0;
+    }
+    /* start of about */
+
+    /* start of services */
+    .container-services
+    {
+        width:90%;
+        margin:auto;
+    }
+    .services-item
+    {
+        margin-right: 0px;
+        margin-bottom: 50px;
+        
+    }
+    /* end of services */
+
+    /* start of PORTFOLIO */
+    .PORTFOLIO-container
+    {
+        width:90%;
+        margin:auto;
+    }
+    .modal-content
+    {
+        width: 400px;
+        margin: auto;
+    }
+    .modal-content img
+    {
+        transform: scale(1.3);
+        width: 100%;
+        border-radius: 50px;
+    }
+    .modal-dialog p
+    {
+        margin-top: 40px;
+        position: static;
+    }
+    /* end of PORTFOLIO */
+    
+    /* start of slider */
+    .carousel-caption
+    {
+        width: 75% !important;
+    }
+    /* end of slider */
+
+    /* start of blog  */
+    .blog-container
+    {
+        width:90%;
+        margin:auto;  
+    }
+    /* end of blog  */
+
+    /* start of contact */
+    .contact-container
+    {
+        width:89%;
+        margin:auto;
+        padding-bottom: 50px !important;
+    }
+    .contact-icons
+    {
+        margin-top: 30px;
+    }
+    /* end of contact */
+}
